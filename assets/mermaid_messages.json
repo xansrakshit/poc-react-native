@@ -1,0 +1,144 @@
+{
+  "messages": [
+    {
+      "_id": "1",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\ngraph LR\n  Start --> Stop\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "2",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\nflowchart TD\n A-->B;\nA-->C;\nB-->D;\nC-->D;\nD-->E;",
+      "chatId": "123423"
+    },
+    {
+      "_id": "3",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\nflowchart LR;\nA-->B;\nA-->C;\nB-->D;\nC-->D;\nD-->E;\nE-->A;\nD-->C;\nD-->B;\nE-->B;\nA-->E;\nB-->A;\nB-->E;",
+      "chatId": "123423"
+    },
+    {
+      "_id": "4",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "flowchart TD\nA(Christmas) -->|Get money| B(Go shopping)\nstyle A fill:red,stroke:black,stroke-width:4px,shadow:shadow\nB --> C{Let me think}\nstyle B fill:green,stroke:black,stroke-width:4px,shadow:shadow\nC -->|One| D[Laptop]\nstyle C fill:blue,stroke:black,stroke-width:4px,shadow:shadow\nC -->|Two| E[iPhone]\nC -->|Three| F[fa:fa-car Car]\nstyle D fill:yellow,stroke:black,stroke-width:2px,shadow:shadow\nstyle E fill:brown,stroke:black,stroke-width:2px,shadow:shadow\nstyle F fill:navy,stroke:black,stroke-width:2px,shadow:shadow",
+      "chatId": "123423"
+    },
+    {
+      "_id": "5",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\nflowchart LR\n    id1(Box with round corner)\n    id2([Stadium])\n    id3[(Database)]\n    id4((Circle))\n    id5{{Hex}}\n    id6[\\Parallelogram\\]\n    id7[\\Trapezoid/]\n\n    id1-- 1st line ---id2\n    id1--> |2nd line| id3\n    id1--- |3rd line| id4\n    id2-.-|4th line| id5\n    subgraph A box around stuf\n    id3 == 5th line ==> id6\n    end\n    subgraph Another box around stuff\n    id4 <--> id7 --> id6\n    end\n\n    style id1 fill:green,stroke:black\n    style id2 fill:white,stroke:#f66,stroke-dasharray: 5, 5\n    style id3 fill:#66f,stroke:#f6f,stroke-width:4px\n    style id4 fill:red,stroke:yellow\n    style id5 fill:orange,stroke:white\n    style id6 fill:yellow,stroke:blue\n    style id7 fill:brown,stroke:blue\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "6",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\ngantt\n    title A Gantt Diagram\n\n    Completed task            :done,    task, 2024-01-06,2024-01-08\n    Active task               :active,  task2, 2024-01-09, 3d\n    Future task               :         task3, after task2, 5d\n    Future task2              :         task4, after task3, 5d\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "7",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\ngantt\n    title A Gantt Diagram\n    dateFormat  YYYY-MM-DD\n    excludes weekends\n    \n    section Demo Section\n    First task  : done,a1, 2023-12-24, 9d\n    Second task : active,a2, 2024-01-01, 14d\n    Milestone   : milestone, m1, after a2, 0d\n    Critical task   : crit,a3, 2024-01-10, 9d\n    Last task   : a4,after a2, 8d\n    Project end : milestone, m2, 2024-02-02, 0d\n\n    section Help the channel out\n    Like      :active,a5,2024-01-5  , 2d\n    Comment : a6,after a5, 7d\n    Subscribe   : crit,a7,after a6,8d\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "8",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\npie \n    showData\n    title PetterTech's content\n    \"Windows 365\" : 13\n    \"Azure\" : 28\n    \"PowerShell\" : 3\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "9",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\nsankey-beta\nWork-week,Writing,14\nWork-week,Drawing,10\nWork-week,Meetings,16\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "10",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\ngitGraph:\n    commit id: \"Initial commit\"\n    commit id: \"Did stuff\"\n    \n    branch branchingOff\n    \n    checkout branchingOff\n    commit id: \"Did some branch stuff\"\n    commit id: \"Did more branch stuff\"\n    checkout main\n    commit id: \"Did some more stuff\"\n    merge branchingOff id: \"Merging back\"\n\n    commit id: \"Post merge stuff\"\n    commit id: \"Final?\"\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "11",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\nmindmap\n  root((My brain))\n    ))Dungeons & Dragons((\n      {{One campaign}}\n        ((DM tasks))\n          Aethenia\n            Kingdoms\n            Cities\n            Villages\n            NPCs\n            Deities\n          Prepare\n          Run\n          Follow up\n          Help players\n      {{Another Campaign}}\n        ((Halldur\n        Trubadur))\n          Bard\n          Dwarven heritage\n          Support\n          Spells\n          Linene\n    ))YouTube((\n      {{Follow up}}\n        Comments\n        Suggestions\n      {{Create content}}\n        )Azure(\n          EPAC\n          Arc\n          AVD\n          Dev Box\n          Spot VMs\n        Code stuff\n          Powershell\n          Bicep\n          Mermaid\n          IaC\n        )Windows 365(\n            Boot\n            Use\n            Features\n            News\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "12",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\n%%{init: { 'logLevel': 'debug', 'theme': 'base' } }%%\ntimeline\n    title PetterTech YouTube channel\n    2015: Creation of channel\n    2021: February <br> First video posted : June <br> Rebrand to PetterTech : October <br> First video to hit 1000 views\n    2022: August <br> Reached a total of 25 uploads : September <br> First video to hit 10k views\n    2023: October <br> Reached 1000 subscribers <br> : November <br> Eligible for YouTube partnership\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "13",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\njourney\n    title A PetterTech day\n    section Mornings\n        Wake up: 1\n        Eat breakfast: 5\n        Walk the dog: 6\n        Go to work at home office: 8\n    section Working day\n        Work: 8\n        Lunch: 9\n        Work: 7\n        End work: 9\n    section Evenings\n        Dinner: 8\n        Stuff with the kids: 8\n        Walk the dog: 8\n        Sleep: 8\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "14",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\nsequenceDiagram\n    participant Alice\n    participant Bob\n    Alice->>John: Hello John, how are you?\n    loop Healthcheck\n        John->>John: Fight against hypochondria\n    end\n    Note right of John: Rational thoughts <br/>prevail...\n    John-->>Alice: Great!\n    John->>Bob: How about you?\n    Bob-->>John: Jolly good!\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "15",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\nquadrantChart\n    x-axis x1 --> x2\n    y-axis y1 --> y2\n    quadrant-1 Comment\n    quadrant-2 Like\n    quadrant-3 Subscribe\n    quadrant-4 Share\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "16",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\nquadrantChart\n    x-axis x1 --> x2\n    y-axis y1 --> y2\n    quadrant-1 Comment\n    quadrant-2 Like\n    quadrant-3 Subscribe\n    quadrant-4 Share\n    dot1: [0.3, 0.7]\n    dot2: [0.6, 0.2]\n    dot3: [0.8, 0.9]\n    dot4: [0.2, 0.4]\n    dot5: [0.6, 0.7]\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "17",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\n\n%%{init: {\"quadrantChart\": {\"chartWidth\": 500, \"chartHeight\": 500}, \"themeVariables\": {\"quadrant1Fill\": \"#5abf5f\",\"quadrant2Fill\": \"#24bda8\",\"quadrant3Fill\": \"red\",\"quadrant4Fill\": \"#bd5e24\",\"quadrantTitleFill\": \"green\", \"quadrantPointFill\": \"black\", \"quadrantPointTextFill\": \"black\", \"quadrant1TextFill\": \"white\", \"quadrant2TextFill\": \"white\", \"quadrant3TextFill\": \"white\", \"quadrant4TextFill\": \"white\"} }}%%\nquadrantChart\n    title Quadrant Diagram\n    x-axis first on x --> second on x\n    y-axis first on y --> second on y\n    quadrant-1 Top right\n    quadrant-2 Top left\n    quadrant-3 Bottom left\n    quadrant-4 Bottom right\n    Dot1: [0.3, 0.7]\n    Dot2: [0.6, 0.2]\n    Dot3: [0.8, 0.9]\n    Dot4: [0.2, 0.4]\n    Dot5: [0.5, 0.1]\n    Dot6: [0.1, 0.3]\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "18",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\nclassDiagram\nclass Animal {\n        +name: string\n        +age: int\n        +makeSound(): void\n    }\n\n    class Dog {\n        +breed: string\n        +bark(): void\n    }\n\n    class Cat {\n        +color: string\n        +meow(): void\n    }\n\n    Animal <|-- Dog\n    Animal <|-- Cat\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "19",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\nerDiagram\n    CUSTOMER }|..|{ DELIVERY-ADDRESS : has\n    CUSTOMER ||--o{ ORDER : places\n    CUSTOMER ||--o{ INVOICE : \"liable for\"\n    DELIVERY-ADDRESS ||--o{ ORDER : receives\n    INVOICE ||--|{ ORDER : covers\n    ORDER ||--|{ ORDER-ITEM : includes\n    PRODUCT-CATEGORY ||--|{ PRODUCT : contains\n    PRODUCT ||--o{ ORDER-ITEM : \"ordered in\"\n",
+      "chatId": "123423"
+    },
+    {
+      "_id": "20",
+      "_creationTime": 123456789,
+      "role": "user",
+      "content": "\nstateDiagram-v2\n    [*] --> Still\n    Still --> [*]\n    Still --> Moving\n    Moving --> Still\n    Moving --> Crash\n    Crash --> [*]\n\nstateDiagram-v2\n    [*] --> Active\n\n    state Active {\n        [*] --> NumLockOff\n        NumLockOff --> NumLockOn : EvNumLockPressed\n        NumLockOn --> NumLockOff : EvNumLockPressed\n        --\n        [*] --> CapsLockOff\n        CapsLockOff --> CapsLockOn : EvCapsLockPressed\n        CapsLockOn --> CapsLockOff : EvCapsLockPressed\n        --\n        [*] --> ScrollLockOff\n        ScrollLockOff --> ScrollLockOn : EvScrollLockPressed\n        ScrollLockOn --> ScrollLockOff : EvScrollLockPressed\n    }",
+      "chatId": "123423"
+    }
+  ]
+}
